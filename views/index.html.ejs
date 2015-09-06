@@ -1,0 +1,27 @@
+<html>
+<head>
+<link href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css' rel='stylesheet'>
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+<%- include header.html.ejs %>
+<div id="map"></div>
+   <script type="text/javascript">
+
+var map;
+function initMap() {
+ map = new google.maps.Map(document.getElementById('map'), {
+   center: {lat: -34.397, lng: 150.644},
+   zoom: 8
+ });
+}
+
+   </script>
+   <script async defer
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYNPQ3d-yaaTqzlK4qC8ovLPD0Pf6ypz8&callback=initMap">
+   </script>
+
+</body>
+</html>

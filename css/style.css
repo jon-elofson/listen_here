@@ -17,8 +17,9 @@ body {
   color: white;
 }
 
-a.navbar-brand {
-  color: white
+nav a.navbar-brand {
+  color: white;
+  font-family: arial;
 }
 
 h1 {
